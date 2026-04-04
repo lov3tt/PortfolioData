@@ -22,6 +22,7 @@
   --blue-dim:  rgba(126,200,255,0.12);
   --blue-glow: rgba(126,200,255,0.35);
 
+
   --text:      #eef0f8;
   --text-2:    #9da3b8;
   --text-3:    #5a607a;
@@ -631,6 +632,29 @@ h1.hero-name {
   border-color: rgba(255,60,84,0.4);
   background: rgba(255,60,84,0.2);
 }
+
+.pill.accent.gold {
+  border-color: rgba(240,180,41,0.2);
+  color: var(--gold);
+  background: var(--gold-dim);
+}
+.pill.accent.gold:hover {
+  border-color: rgba(240,180,41,0.4);
+  background: rgba(240,180,41,0.2);
+}
+
+.pill.accent.blue {
+  border-color: rgba(126,200,255,0.2);
+  color: var(--blue);
+  background: var(--blue-dim);
+}
+
+.pill.accent.blue:hover {
+  border-color: rgba(126,200,255,0.4);
+  background: rgba(126,200,255,0.2);
+}
+
+
 
 /* ── PROJECTS ── */
 .projects-grid {
