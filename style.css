@@ -18,6 +18,10 @@
   --gold:      #f0b429;
   --gold-dim:  rgba(240,180,41,0.12);
   --gold-glow: rgba(240,180,41,0.35);
+  --blue:      #7ec8ff;
+  --blue-dim:  rgba(126,200,255,0.12);
+  --blue-glow: rgba(126,200,255,0.35);
+
   --text:      #eef0f8;
   --text-2:    #9da3b8;
   --text-3:    #5a607a;
@@ -939,3 +943,16 @@ footer {
   footer { padding: 28px 24px; }
   .footer-inner { flex-direction: column; text-align: center; gap: 10px; }
 }
+
+
+a[href*="onrender.com"] { 
+  position: relative;
+  z-index: 999;
+  display: inline-block; /* Ensures the link has a clickable area */
+}
+a[href*="https://github.com/lov3tt/EasySteamReview"] { 
+  position: relative;
+  z-index: 999;
+  display: inline-block; /* Ensures the link has a clickable area */
+}
+
