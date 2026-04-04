@@ -359,6 +359,13 @@ h1.hero-name {
   background: var(--gold-dim);
 }
 
+.hbadge.blue {
+  border-color: rgba(126,200,255,0.3);
+  color: var(--blue);
+  background: var(--blue-dim);
+}
+
+
 .hero-scroll {
   position: absolute;
   bottom: 40px;
