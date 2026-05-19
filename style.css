@@ -682,6 +682,7 @@ h1.hero-name {
   background: linear-gradient(135deg, rgba(255,60,84,0.03), transparent);
   opacity: 0;
   transition: opacity var(--transition);
+  pointer-events: none;
 }
 .project-card:hover {
   border-color: var(--border-h);
@@ -697,7 +698,28 @@ h1.hero-name {
   letter-spacing: 0.12em;
   margin-bottom: 20px;
 }
-.project-body { flex: 1; display: flex; flex-direction: column; }
+.project-card > a:has(.project-image) {
+  display: block;
+  margin-bottom: 24px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.project-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center top;
+}
+.project-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
 .project-tags {
   display: flex;
   gap: 8px;
@@ -737,6 +759,8 @@ h1.hero-name {
   margin-top: auto;
   padding-top: 20px;
   border-top: 1px solid var(--border);
+  position: relative;
+  z-index: 2;
 }
 .plink {
   font-size: 13px;
