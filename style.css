@@ -288,6 +288,13 @@ h1.hero-name {
   color: var(--red);
   letter-spacing: 0.08em;
   margin-bottom: 20px;
+  /* Keep the role line to a single line (nowrap) and reserve one line
+     of height (line-height + min-height) so the typewriter cycling in
+     app.js can't shift the page — neither by wrapping to two lines nor
+     by collapsing to zero height when the text is fully deleted. */
+  white-space: nowrap;
+  line-height: 1.5;
+  min-height: 1.5em;
 }
 .hero-desc {
   font-size: 17px;
